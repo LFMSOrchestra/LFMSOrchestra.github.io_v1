@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- iOS Web App meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="SongPlayer 2.0">
+    <link rel="apple-touch-icon" href="img/bear.png">
+
+    <!-- jQuery (Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS (Bootstrap) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Latest compiled and minified JavaScript (Bootstrap) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title>Song Player | LFMS Orchestra</title>
+    <script src="js/song_player.js"></script>
+  </head>
+
+  <body onload="checkApp()">
+    <div class="jumbotron container">
+      <h1 id="header">Las Flores Middle School Orchestra</h1>
+      <span id="navigation">
+        <nav>
+          <ul class="nav nav-pills">
+            <li role="presentation"><a href="index.html">Home</a></li>
+            <li role="presentation"><a href="news.html">News</a></li>
+            <li role="presentation"><a href="testing.html">Testing Songs</a></li>
+            <li role="presentation" class="active"><a href="song.html">Song Player</a></li>
+            <li role="presentation"><a href="midi.html">MIDI Player</a></li>
+          </ul>
+        </nav>
+      </span>
+
+    </div>
+    <div class="container">
+      <span id="notice">
+      </span>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="glyphicon glyphicon-music"></span> <span id="current_song">Select Song</span> <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" style="margin: 5px;">
+          <li class="dropdown-header">Level 3 (Grade 6)</li>
+          <li><a href="#" onclick="openSong('song1')">Song #1</a></li>
+          <li><a href="#" onclick="openSong('song2')">Song #2</a></li>
+          <li><a href="#" onclick="openSong('')">Song Without Words #3</a></li>
+          <li><a href="#" onclick="openSong('')">Lesson 4, II</a></li>
+          <li><a href="#" onclick="openSong('')">Lesson 8, II</a></li>
+          <li><a href="#" onclick="openSong('')">Holla Hi Holla Ho</a></li>
+          <li><a href="#" onclick="openSong('')">Waltzing Matilda</a></li>
+          <li><a href="#" onclick="openSong('')">Lesson 23, II</a></li>
+          <li><a href="#" onclick="openSong('')">Alouette</a></li>
+          <li><a href="#" onclick="openSong('')">For the Beauty of the Earth</a></li>
+          <li><a href="#" onclick="openSong('')">College Hymn</a></li>
+          <li><a href="#" onclick="openSong('')">Chester</a></li>
+          <li><a href="#" onclick="openSong('')">Muffin Man</a></li>
+          <li><a href="#" onclick="openSong('')">German Chorale</a></li>
+          <li><a href="#" onclick="openSong('')">Simple Gifts</a></li>
+          <li><a href="#" onclick="openSong('')">Minstrel Boy</a></li>
+          <li><a href="#" onclick="openSong('')">I've Been Working on the Railroad</a></li>
+          <li><a href="#" onclick="openSong('')">Galway Piper</a></li>
+          <li><a href="#" onclick="openSong('')">Dancing Through the Corn</a></li>
+          <li><a href="#" onclick="openSong('')">The Rain has Stopped</a></li>
+          <li><a href="#" onclick="openSong('')">Glendy Burke</a></li>
+          <li><a href="#" onclick="openSong('')">Etude 1</a></li>
+          <li><a href="#" onclick="openSong('')">Sourwood Mountain</a></li>
+          <li><a href="#" onclick="openSong('')">Happy Plowman</a></li>
+          <li><a href="#" onclick="openSong('')">Etude 3</a></li>
+          <li><a href="#" onclick="openSong('')">Exercise in 1<sup>st</sup> Position</a></li>
+          <li><a href="#" onclick="openSong('')">Alla Turca</a></li>
+          <li class="dropdown-header">Level 4 (Grade 7)</li>
+          <li class="dropdown-header">Level 5 (Grade 8)</li>
+          <li><a href="#" onclick="openSong('romance')">Romance</a></li>
+          <li><a href="#" onclick="openSong('seitz90violin')">Concertino № 5 Violin <span class="glyphicon glyphicon-circle-arrow-down"></span> 90 BPM</a></li>
+        </ul>
+      </div>
+      <div id="player_div" style="margin: 10px;">
+        <audio id="mp3_player" src="" controls onerror="audioError()">
+          <p>Unsupported Browser</p>
+        </audio>
+      </div>
+    </div>
+    <!-- Footer -->
+    <link rel="stylesheet" href="css/footer.css" />
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Developed by <a href="https://github.com/juniorRubyist">Joseph Geis</a>, just for LFMS.<br>
+        © 2017 Las Flores Middle School Orchestra</p>
+      </div>
+    </footer>
+  </body>
+</html>
