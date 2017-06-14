@@ -51,7 +51,7 @@ function openSong(song){
     'gavottegossec' : 'mp3/String7/18GavotteGossec.mp3',
     'hunter' : 'mp3/String7/19HuntersChorus.mp3',
     'wohlfahrt1' : 'mp3/String7/20EtudeNo1.mp3',
-    'studentino' : 'mp3/String7/21Concertino.mp3',
+    'studentino' : 'mp3/String7/21HuberConcertino.mp3',
     // Level 5
     'romance' : 'mp3/String8/01Romance.mp3',
     'gavottehandel' : 'mp3/String8/03GavotteHandel.mp3',
@@ -134,12 +134,15 @@ function openSong(song){
 
 function checkApp(){
   userAgent = window.navigator.userAgent;
-  if (window.navigator.standalone) {
+  if (window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches) {
     document.getElementById('header').innerHTML = "SongPlayer 2.0 <small>For Mobile</small>"
     document.getElementById('navigation').innerHTML = '<div class="col-xs-12"><button onclick="window.location.reload()" class="btn btn-success"><span class="glyphicon glyphicon-refresh"></span> Reload</button></div>'
     return 0;
   } else if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
-    document.getElementById('notice').innerHTML = "<div class='alert alert-info' role='alert'><strong>Install the app for easy access!</strong><p>All you have to do is tap Share (looks like <span class='glyphicon glyphicon-collapse-up'></span>) and choose this icon:</p><img src='img/home_screen.jpg' width='100' /></div>"
+    document.getElementById('notice').innerHTML = "<div class='alert alert-info' role='alert'><strong>Install the app for easy access!</strong><p>All you have to do is tap Share <span class='glyphicon glyphicon-collapse-up'></span> and choose this icon:</p><img src='img/ios_safari_home.jpg' width='100' /></div>"
+    return 0;
+  } else if (userAgent.match(/Android/i)) {
+    document.getElementById('notice').innerHTML = "<div class='alert alert-info' role='alert'><strong>Install the app for easy access!</strong><p>All you have to do is tap the <span class='glyphicon glyphicon-option-vertical'></span> and choose <kbd>Add to Home Screen</kbd>.</p><img src='img/android_chrome_home.jpg' width='100' /></div>"
     return 0;
   }
 }

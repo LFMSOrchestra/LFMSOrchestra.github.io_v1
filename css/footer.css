@@ -3,9 +3,7 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 80px;
-}
+/* body {margin-bottom: 80px;} */
 
 .footer {
   position: absolute;
@@ -18,5 +16,5 @@ body {
 }
 
 .container .text-muted {
-  margin: 20px 0;
+  margin: 10px 0;
 }
