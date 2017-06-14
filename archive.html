@@ -48,10 +48,11 @@
     </div>
 
     <link rel="stylesheet" href="css/footer.css" />
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
-        <p class="text-muted">© 2017 Las Flores Middle School Orchestra</p>
+        <p class="text-muted">© 2017 Las Flores Middle School Orchestra<br><a href="https://github.com/LFMSOrchestra/LFMSOrchestra.github.io/issues">Bugs?</a></p>
       </div>
     </footer>
+    <script>document.getElementsByTagName('body')[0].style.marginBottom = $('#footer').height() + 'px'</script>
   </body>
 </html>

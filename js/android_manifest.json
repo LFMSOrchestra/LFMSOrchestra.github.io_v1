@@ -1,0 +1,13 @@
+{
+  "name": "SongPlayer",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "img/bear.png",
+      "sizes": "284x284",
+      "type": "image/png",
+      "density": 1.0
+    }
+  ]
+}

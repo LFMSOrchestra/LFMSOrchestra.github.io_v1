@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- iOS Web App meta tags -->
+    <!-- Mobile Web App meta tags -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="SongPlayer 2.0">
     <link rel="apple-touch-icon" href="img/bear.png">
+    <link rel="manifest" href="js/android_manifest.json">
 
     <!-- jQuery (Bootstrap) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -125,11 +126,12 @@
     </div>
     <!-- Footer -->
     <link rel="stylesheet" href="css/footer.css" />
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
         <p class="text-muted">Developed by <a href="https://github.com/juniorRubyist">Joseph Geis</a>, just for LFMS.<br>
-        © 2017 Las Flores Middle School Orchestra</p>
+        © 2017 Las Flores Middle School Orchestra<br><a href="https://github.com/LFMSOrchestra/LFMSOrchestra.github.io/issues">Bugs?</a></p>
       </div>
     </footer>
+    <script>document.getElementsByTagName('body')[0].style.marginBottom = $('#footer').height() + 'px'</script>
   </body>
 </html>
