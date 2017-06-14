@@ -21,7 +21,7 @@ Type URL here.
 ```
 
 ## Console Messages
-__Press <kbd>⌘Cmd</kbd>+<kbd>⇪Shift</kbd>+<kbd>J</kbd> on macOS or <kbd>Ctrl</kbd>+<kbd>⇪Shift</kbd>+<kbd>J</kbd> on Windows and copy/paste all content below. (Works with most major browsers)__
+__*Firefox Only*: Press <kbd>⌘Cmd</kbd>+<kbd>⇪Shift</kbd>+<kbd>J</kbd> on macOS or <kbd>Ctrl</kbd>+<kbd>⇪Shift</kbd>+<kbd>J</kbd> on Windows and copy/paste all content below.__
 ```
 Paste here. Optional, but highly recommended.
 ```
