@@ -1,138 +1,139 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- Mobile Web App meta tags -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="SongPlayer 2.0">
-    <link rel="apple-touch-icon" href="img/bear.png">
-    <link rel="manifest" href="js/android_manifest.json">
+  <!-- Mobile Web App meta tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="SongPlayer 2.0">
+  <link rel="apple-touch-icon" href="img/bear.png">
+  <link rel="manifest" href="js/android_manifest.json">
 
-    <!-- jQuery (Bootstrap) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    
-    <!-- Latest compiled and minified CSS (Bootstrap) -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
-    <!-- Latest compiled and minified JavaScript (Bootstrap) -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- jQuery (Bootstrap) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <title>Song Player | LFMS Orchestra</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <script src="js/song_player.js"></script>
-  </head>
+  <!-- Latest compiled and minified CSS (Bootstrap) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <body onload="checkApp()">
-    <div class="jumbotron container">
-      <h1 id="header">Las Flores Middle School Orchestra</h1>
-      <span id="navigation">
-        <nav>
-          <ul class="nav nav-pills">
-            <li role="presentation"><a href="index.html">Home</a></li>
-            <li role="presentation"><a href="news.html">News</a></li>
-            <li role="presentation"><a href="testing.html">Testing Songs</a></li>
-            <li role="presentation" class="active"><a href="song.html">Song Player</a></li>
-            <li role="presentation"><a href="midi.html">MIDI Player</a></li>
-          </ul>
-        </nav>
-      </span>
+  <!-- Latest compiled and minified JavaScript (Bootstrap) -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    </div>
-    <div class="container">
-      <span id="notice">
-      </span>
-      <div class="btn-group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span class="glyphicon glyphicon-music"></span> <span id="current_song">Select Song</span> <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" role="menu" style="margin:5px;height:auto;max-height:200px;overflow-x:hidden;">
-          <li class="dropdown-header">Level 3 (Grade 6)</li>
-          <li><a href="#" onclick="openSong('song1')">Song Without Words #1</a></li>
-          <li><a href="#" onclick="openSong('song2')">Song Without Words #2</a></li>
-          <li><a href="#" onclick="openSong('song3')">Song Without Words #3</a></li>
-          <li><a href="#" onclick="openSong('lesson4')">Lesson 4, II</a></li>
-          <li><a href="#" onclick="openSong('lesson8')">Lesson 8, II</a></li>
-          <li><a href="#" onclick="openSong('holla')">Holla Hi Holla Ho</a></li>
-          <li><a href="#" onclick="openSong('matilda')">Waltzing Matilda</a></li>
-          <li><a href="#" onclick="openSong('lesson23')">Lesson 23, II</a></li>
-          <li><a href="#" onclick="openSong('alouette')">Alouette</a></li>
-          <li><a href="#" onclick="openSong('beauty')">For the Beauty of the Earth</a></li>
-          <li><a href="#" onclick="openSong('college')">College Hymn</a></li>
-          <li><a href="#" onclick="openSong('chester')">Chester</a></li>
-          <li><a href="#" onclick="openSong('muffin')">Muffin Man</a></li>
-          <li><a href="#" onclick="openSong('german')">German Chorale</a></li>
-          <li><a href="#" onclick="openSong('gifts')">Simple Gifts</a></li>
-          <li><a href="#" onclick="openSong('minstrel')">Minstrel Boy</a></li>
-          <li><a href="#" onclick="openSong('railroad')">I've Been Working on the Railroad</a></li>
-          <li><a href="#" onclick="openSong('piper')">Galway Piper</a></li>
-          <li><a href="#" onclick="openSong('corn')">Dancing Through the Corn</a></li>
-          <li><a href="#" onclick="openSong('rain')">The Rain has Stopped</a></li>
-          <li><a href="#" onclick="openSong('glendy')">Glendy Burke</a></li>
-          <li><a href="#" onclick="openSong('etude1')">Etude 1</a></li>
-          <li><a href="#" onclick="openSong('sourwood')">Sourwood Mountain</a></li>
-          <li><a href="#" onclick="openSong('plowman')">Happy Plowman</a></li>
-          <li><a href="#" onclick="openSong('etude3')">Etude 3</a></li>
-          <li><a href="#" onclick="openSong('firstpos')">Exercise in 1<sup>st</sup> Position</a></li>
-          <li><a href="#" onclick="openSong('allaturca')">Alla Turca</a></li>
-          <li class="dropdown-header">Level 4 (Grade 7)</li>
-          <li><a href="#" onclick="openSong('scipio')">March from Scipio</a></li>
-          <li><a href="#" onclick="openSong('germandance')">German Dance</a></li>
-          <li><a href="#" onclick="openSong('andante')">Andante from Surprise Symphony</a></li>
-          <li><a href="#" onclick="openSong('minuethandel')">Minuet <small>by Handel</small></a></li>
-          <li><a href="#" onclick="openSong('symph1')">Symphony № 1</a></li>
-          <li><a href="#" onclick="openSong('rondeau')">Rondeau</a></li>
-          <li><a href="#" onclick="openSong('march')">March <small>by Handel</small></a></li>
-          <li><a href="#" onclick="openSong('trio')">Trio and Minuet</a></li>
-          <li><a href="#" onclick="openSong('voluntary')">Voluntary</a></li>
-          <li><a href="#" onclick="openSong('twoairs')">Two Airs</a></li>
-          <li><a href="#" onclick="openSong('minuetbach')">Minuet <small>by Bach</small></a></li>
-          <li><a href="#" onclick="openSong('burlesque')">Burlesque</a></li>
-          <li><a href="#" onclick="openSong('gavottecorelli')">Gavotte <small>by Corelli</small></a></li>
-          <li><a href="#" onclick="openSong('bouree')">Bouree</a></li>
-          <li><a href="#" onclick="openSong('gavottedandrieu')">Gavotte <small>by Dandrieu</small></a></li>
-          <li><a href="#" onclick="openSong('rondocapriccio')">Rondo a Capriccio</a></li>
-          <li><a href="#" onclick="openSong('gavottegossec')">Gavotte <small>by Gossec</small></a></li>
-          <li><a href="#" onclick="openSong('hunter')">Hunter's Chorus</a></li>
-          <li><a href="#" onclick="openSong('wohlfahrt1')">Etude № 1 <small>by Wohlfahrt</small></a></li>
-          <li><a href="#" onclick="openSong('studentino')">Student Concertino № 4</a></li>
-          <li class="dropdown-header">Level 5 (Grade 8)</li>
-          <li><a href="#" onclick="openSong('romance')">Romance</a></li>
-          <li><a href="#" onclick="openSong('gavottehandel')">Gavotte <small>by Handel</small></a></li>
-          <li><a href="#" onclick="openSong('allegromod')">Allegro Moderato</a></li>
-          <li><a href="#" onclick="openSong('sonata7')">Sonata № 7</a></li>
-          <li><a href="#" onclick="openSong('wohlfahrt33vio')">Etude № 33 (Violin)</a></li>
-          <li><a href="#" onclick="openSong('wohlfahrt33cell')">Etude № 33 (Viola/Cello/Bass)</a></li>
-          <li><a href="#" onclick="openSong('seitzvio')">Concerto № 5 by Seitz (Violin)</a></li>
-          <li><a href="#" onclick="openSong('seitzvio90')">Concerto № 5 by Seitz (Violin) <span class="glyphicon glyphicon-circle-arrow-down"></span> 90 BPM</a></li>
-          <li><a href="#" onclick="openSong('seitzcell')">Concerto № 5 by Seitz (Viola)</a></li>
-          <li><a href="#" onclick="openSong('seitzcell90')">Concerto № 5 by Seitz (Viola) <span class="glyphicon glyphicon-circle-arrow-down"></span> 90 BPM</a></li>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <title>Song Player | LFMS Orchestra</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <script src="js/song_player.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="checkApp()">
+  <div class="jumbotron container">
+    <h1 id="header">Las Flores Middle School Orchestra</h1>
+    <span id="navigation">
+      <nav>
+        <ul class="nav nav-pills">
+          <li role="presentation"><a href="index.html">Home</a></li>
+          <li role="presentation"><a href="news.html">News</a></li>
+          <li role="presentation"><a href="testing.html">Testing Songs</a></li>
+          <li role="presentation" class="active"><a href="song.html">Song Player</a></li>
+          <li role="presentation"><a href="midi.html">MIDI Player</a></li>
         </ul>
-      </div>
-      <div id="player_div" style="margin: 10px;">
-        <audio id="mp3_player" src="" controls onerror="audioError()">
-          <p>Unsupported Browser</p>
-        </audio>
-      </div>
+      </nav>
+    </span>
+
+  </div>
+  <div class="container">
+    <span id="notice">
+    </span>
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="glyphicon glyphicon-music"></span> <span id="current_song">Select Song</span> <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" style="margin:5px;height:auto;max-height:200px;overflow-x:hidden;">
+        <li class="dropdown-header">Level 3 (Grade 6)</li>
+        <li><a href="#" onclick="openSong('song1')">Song Without Words #1</a></li>
+        <li><a href="#" onclick="openSong('song2')">Song Without Words #2</a></li>
+        <li><a href="#" onclick="openSong('song3')">Song Without Words #3</a></li>
+        <li><a href="#" onclick="openSong('lesson4')">Lesson 4, II</a></li>
+        <li><a href="#" onclick="openSong('lesson8')">Lesson 8, II</a></li>
+        <li><a href="#" onclick="openSong('holla')">Holla Hi Holla Ho</a></li>
+        <li><a href="#" onclick="openSong('matilda')">Waltzing Matilda</a></li>
+        <li><a href="#" onclick="openSong('lesson23')">Lesson 23, II</a></li>
+        <li><a href="#" onclick="openSong('alouette')">Alouette</a></li>
+        <li><a href="#" onclick="openSong('beauty')">For the Beauty of the Earth</a></li>
+        <li><a href="#" onclick="openSong('college')">College Hymn</a></li>
+        <li><a href="#" onclick="openSong('chester')">Chester</a></li>
+        <li><a href="#" onclick="openSong('muffin')">Muffin Man</a></li>
+        <li><a href="#" onclick="openSong('german')">German Chorale</a></li>
+        <li><a href="#" onclick="openSong('gifts')">Simple Gifts</a></li>
+        <li><a href="#" onclick="openSong('minstrel')">Minstrel Boy</a></li>
+        <li><a href="#" onclick="openSong('railroad')">I've Been Working on the Railroad</a></li>
+        <li><a href="#" onclick="openSong('piper')">Galway Piper</a></li>
+        <li><a href="#" onclick="openSong('corn')">Dancing Through the Corn</a></li>
+        <li><a href="#" onclick="openSong('rain')">The Rain has Stopped</a></li>
+        <li><a href="#" onclick="openSong('glendy')">Glendy Burke</a></li>
+        <li><a href="#" onclick="openSong('etude1')">Etude 1</a></li>
+        <li><a href="#" onclick="openSong('sourwood')">Sourwood Mountain</a></li>
+        <li><a href="#" onclick="openSong('plowman')">Happy Plowman</a></li>
+        <li><a href="#" onclick="openSong('etude3')">Etude 3</a></li>
+        <li><a href="#" onclick="openSong('firstpos')">Exercise in 1<sup>st</sup> Position</a></li>
+        <li><a href="#" onclick="openSong('allaturca')">Alla Turca</a></li>
+        <li class="dropdown-header">Level 4 (Grade 7)</li>
+        <li><a href="#" onclick="openSong('scipio')">March from Scipio</a></li>
+        <li><a href="#" onclick="openSong('germandance')">German Dance</a></li>
+        <li><a href="#" onclick="openSong('andante')">Andante from Surprise Symphony</a></li>
+        <li><a href="#" onclick="openSong('minuethandel')">Minuet <small>by Handel</small></a></li>
+        <li><a href="#" onclick="openSong('symph1')">Symphony № 1</a></li>
+        <li><a href="#" onclick="openSong('rondeau')">Rondeau</a></li>
+        <li><a href="#" onclick="openSong('march')">March <small>by Handel</small></a></li>
+        <li><a href="#" onclick="openSong('trio')">Trio and Minuet</a></li>
+        <li><a href="#" onclick="openSong('voluntary')">Voluntary</a></li>
+        <li><a href="#" onclick="openSong('twoairs')">Two Airs</a></li>
+        <li><a href="#" onclick="openSong('minuetbach')">Minuet <small>by Bach</small></a></li>
+        <li><a href="#" onclick="openSong('burlesque')">Burlesque</a></li>
+        <li><a href="#" onclick="openSong('gavottecorelli')">Gavotte <small>by Corelli</small></a></li>
+        <li><a href="#" onclick="openSong('bouree')">Bouree</a></li>
+        <li><a href="#" onclick="openSong('gavottedandrieu')">Gavotte <small>by Dandrieu</small></a></li>
+        <li><a href="#" onclick="openSong('rondocapriccio')">Rondo a Capriccio</a></li>
+        <li><a href="#" onclick="openSong('gavottegossec')">Gavotte <small>by Gossec</small></a></li>
+        <li><a href="#" onclick="openSong('hunter')">Hunter's Chorus</a></li>
+        <li><a href="#" onclick="openSong('wohlfahrt1')">Etude № 1 <small>by Wohlfahrt</small></a></li>
+        <li><a href="#" onclick="openSong('studentino')">Student Concertino № 4</a></li>
+        <li class="dropdown-header">Level 5 (Grade 8)</li>
+        <li><a href="#" onclick="openSong('romance')">Romance</a></li>
+        <li><a href="#" onclick="openSong('gavottehandel')">Gavotte <small>by Handel</small></a></li>
+        <li><a href="#" onclick="openSong('allegromod')">Allegro Moderato</a></li>
+        <li><a href="#" onclick="openSong('sonata7')">Sonata № 7</a></li>
+        <li><a href="#" onclick="openSong('wohlfahrt33vio')">Etude № 33 (Violin)</a></li>
+        <li><a href="#" onclick="openSong('wohlfahrt33cell')">Etude № 33 (Viola/Cello/Bass)</a></li>
+        <li><a href="#" onclick="openSong('seitzvio')">Concerto № 5 by Seitz (Violin)</a></li>
+        <li><a href="#" onclick="openSong('seitzvio90')">Concerto № 5 by Seitz (Violin) <span class="glyphicon glyphicon-circle-arrow-down"></span> 90 BPM</a></li>
+        <li><a href="#" onclick="openSong('seitzcell')">Concerto № 5 by Seitz (Viola)</a></li>
+        <li><a href="#" onclick="openSong('seitzcell90')">Concerto № 5 by Seitz (Viola) <span class="glyphicon glyphicon-circle-arrow-down"></span> 90 BPM</a></li>
+      </ul>
     </div>
-    <!-- Footer -->
-    <link rel="stylesheet" href="css/footer.css" />
-    <footer id="footer" class="footer">
-      <div class="container">
-        <p class="text-muted">Developed by <a href="https://github.com/juniorRubyist">Joseph Geis</a>, just for LFMS.<br>
+    <div id="player_div" style="margin: 10px;">
+      <audio id="mp3_player" src="" controls onerror="audioError()">
+        <p>Unsupported Browser</p>
+      </audio>
+    </div>
+  </div>
+  <!-- Footer -->
+  <link rel="stylesheet" href="css/footer.css" />
+  <footer id="footer" class="footer">
+    <div class="container">
+      <p class="text-muted">Developed by <a href="https://github.com/juniorRubyist">Joseph Geis</a>, just for LFMS.<br>
         © 2017 Las Flores Middle School Orchestra<br><a href="https://github.com/LFMSOrchestra/LFMSOrchestra.github.io/blob/master/.github/CONTRIBUTING.md">Bugs?</a></p>
       </div>
     </footer>
     <script>document.getElementsByTagName('body')[0].style.marginBottom = $('#footer').height() + 'px'</script>
   </body>
-</html>
+  </html>

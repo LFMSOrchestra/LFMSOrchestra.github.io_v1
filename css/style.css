@@ -1,0 +1,7 @@
+/* This is the global stylesheet for generic styles. */
+/* Use Emmet's `link:css` and change `src` to `css/style.css` */
+
+/* Add .disabled to an a to "disable" it */
+a.disabled {
+  pointer-events: none;
+}

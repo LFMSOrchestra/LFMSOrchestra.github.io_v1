@@ -1,527 +1,528 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- iOS Web App meta tags -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- iOS Web App meta tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <!-- jQuery (Bootstrap) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    
-    <!-- Latest compiled and minified CSS (Bootstrap) -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
-    <!-- Latest compiled and minified JavaScript (Bootstrap) -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- jQuery (Bootstrap) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <title>Testing | LFMS Orchestra</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-  </head>
+  <!-- Latest compiled and minified CSS (Bootstrap) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <body>
-    <div class="jumbotron container">
-      <h1>Las Flores Middle School Orchestra</h1>
-      <nav>
-        <ul class="nav nav-pills">
-          <li role="presentation"><a href="index.html">Home</a></li>
-          <li role="presentation"><a href="news.html">News</a></li>
-          <li role="presentation" class="active"><a href="testing.html">Testing Songs</a></li>
-          <li role="presentation"><a href="song.html">Song Player</a></li>
-          <li role="presentation"><a href="midi.html">MIDI Player</a></li>
-        </ul>
-      </nav>
-    </div>
+  <!-- Latest compiled and minified JavaScript (Bootstrap) -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <div class="container">
-      <h1>Download Testing MIDI Files</h1>
-      <div>
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs nav-justified" role="tablist">
-          <li role="presentation" class="active"><a href="#level3" aria-controls="level_3" role="tab" data-toggle="tab">6<sup>th</sup> Grade (Level 3)</a></li>
-          <li role="presentation"><a href="#level4" aria-controls="level_4" role="tab" data-toggle="tab">7<sup>th</sup> Grade (Level 4)</a></li>
-          <li role="presentation"><a href="#level5" aria-controls="level_5" role="tab" data-toggle="tab">8<sup>th</sup> Grade (Level 5)</a></li>
-        </ul>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <!-- 6th Grade -->
-          <div role="tabpanel" class="tab-pane active" id="level3">
-            <div class="page-header">
-              <h2 style="display:inline;">
-                6<sup>th</sup> Grade <small>Level 3</small>
-              </h2>
+  <title>Testing | LFMS Orchestra</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-              <div style="float:right" class="btn-group" role="group" id="table-controls-6">
+<body>
+  <div class="jumbotron container">
+    <h1>Las Flores Middle School Orchestra</h1>
+    <nav>
+      <ul class="nav nav-pills">
+        <li role="presentation"><a href="index.html">Home</a></li>
+        <li role="presentation"><a href="news.html">News</a></li>
+        <li role="presentation" class="active"><a href="testing.html">Testing Songs</a></li>
+        <li role="presentation"><a href="song.html">Song Player</a></li>
+        <li role="presentation"><a href="midi.html">MIDI Player</a></li>
+      </ul>
+    </nav>
+  </div>
 
-                <div class="btn-group" role="group">
-                 <div class="dropdown">
-                   <button class="btn btn-primary dropdown-toggle" type="button" id="grade-6-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <span class="glyphicon glyphicon-filter"></span> <span id="grade-6-filter-text">Filter</span>
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="grade-6-filter">
-                      <li><a onclick="show_level_3a()">Show Level 3A</a></li>
-                      <li><a onclick="show_level_3b()">Show Level 3B</a></li>
-                      <li><a onclick="show_level_3c()">Show Level 3C</a></li>
-                      <li><a onclick="show_level_3d()">Show Level 3D</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a onclick="show_level_3all()">Show All</a></li>
-                    </ul>
-                  </div>
-                </div>
+  <div class="container">
+    <h1>Download Testing MIDI Files</h1>
+    <div>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs nav-justified" role="tablist">
+        <li role="presentation" class="active"><a href="#level3" aria-controls="level_3" role="tab" data-toggle="tab">6<sup>th</sup> Grade (Level 3)</a></li>
+        <li role="presentation"><a href="#level4" aria-controls="level_4" role="tab" data-toggle="tab">7<sup>th</sup> Grade (Level 4)</a></li>
+        <li role="presentation"><a href="#level5" aria-controls="level_5" role="tab" data-toggle="tab">8<sup>th</sup> Grade (Level 5)</a></li>
+      </ul>
 
-                <div class="btn-group" role="group">
-                  <button type="button" class="btn btn-success" onclick="window.location = 'midi/String6_midi.zip'"><span class="glyphicon glyphicon-save"></span> MIDI .zip (~46 KB)</button>
-                </div>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!-- 6th Grade -->
+        <div role="tabpanel" class="tab-pane active" id="level3">
+          <div class="page-header">
+            <h2 style="display:inline;">
+              6<sup>th</sup> Grade <small>Level 3</small>
+            </h2>
 
-                <div class="btn-group" role="group">
-                  <button type="button" class="btn btn-danger" onclick="window.location = 'mp3/String6_mp3.zip'"><span class="glyphicon glyphicon-save"></span> MP3 .zip (~28 MB)</button>
-                </div>
+            <div style="float:right" class="btn-group" role="group" id="table-controls-6">
+
+              <div class="btn-group" role="group">
+               <div class="dropdown">
+                 <button class="btn btn-primary dropdown-toggle" type="button" id="grade-6-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-filter"></span> <span id="grade-6-filter-text">Filter</span>
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="grade-6-filter">
+                  <li><a onclick="show_level_3a()">Show Level 3A</a></li>
+                  <li><a onclick="show_level_3b()">Show Level 3B</a></li>
+                  <li><a onclick="show_level_3c()">Show Level 3C</a></li>
+                  <li><a onclick="show_level_3d()">Show Level 3D</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a onclick="show_level_3all()">Show All</a></li>
+                </ul>
               </div>
             </div>
 
-            <table class="table table-bordered table-hover">
-              <thead>
-                <tr>
-                  <th>Song</th>
-                  <th>MIDI Download</th>
-                  <th>MP3 Download</th>
-                </tr>
-              </thead>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-success" onclick="window.location = 'midi/String6_midi.zip'"><span class="glyphicon glyphicon-save"></span> MIDI .zip (~46 KB)</button>
+            </div>
 
-              <tbody id="level_3a">
-                <tr>
-                  <td>Song Without Words #1</td>
-                  <td><a href="midi/String6/01Song1.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/01Song1.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Song Without Words #2</td>
-                  <td><a href="midi/String6/02Song2.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/02Song2.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Song Without Words #3</td>
-                  <td><a href="midi/String6/03Song3.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/03Song3.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Lesson 4, II</td>
-                  <td><a href="midi/String6/04lesson4II.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/04lesson4II.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Lesson 8, II</td>
-                  <td><a href="midi/String6/05lesson8II.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/05lesson8II.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Holla Hi Holla Ho</td>
-                  <td><a href="midi/String6/06HollaHi.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/06HollaHi.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Waltzing Matilda</td>
-                  <td><a href="midi/String6/07WaltzingMatilda.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/07WaltzingMatilda.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Lesson 23, II</td>
-                  <td><a href="midi/String6/08Lesson23II.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/08Lesson23II.mp3" download>MP3 Download</a></td>
-                </tr>
-              </tbody>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-danger" onclick="window.location = 'mp3/String6_mp3.zip'"><span class="glyphicon glyphicon-save"></span> MP3 .zip (~28 MB)</button>
+            </div>
+          </div>
+        </div>
 
-              <tbody id="level_3b">
-                <tr>
-                  <td>Alouette</td>
-                  <td><a href="midi/String6/09Alouette.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/09Alouette.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>For the Beauty of the Earth</td>
-                  <td><a href="midi/String6/10ForTheBeauty.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/10ForTheBeauty.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>College Hymn</td>
-                  <td><a href="midi/String6/11CollegeHymn.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/11CollegeHymn.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Chester</td>
-                  <td><a href="midi/String6/12Chester.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/12Chester.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Muffin Man</td>
-                  <td><a href="midi/String6/13MuffinMan.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/13MuffinMan.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>German Chorale</td>
-                  <td><a href="midi/String6/14GermanChorale.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/14GermanChorale.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Simple Gifts</td>
-                  <td><a href="midi/String6/15SimpleGifts.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/15SimpleGifts.mp3" download>MP3 Download</a></td>
-                </tr>
-              </tbody>
-      
-              <tbody id="level_3c">
-                <tr>
-                  <td>Minstrel Boy</td>
-                  <td><a href="midi/String6/17MinstrelBoy.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/17MinstrelBoy.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>I've Been Working on the Railroad</td>
-                  <td><a href="midi/String6/18Railroad.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/18Railroad.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Galway Piper</td>
-                  <td><a href="midi/String6/20GalwayPiper.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/20GalwayPiper.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Dancing Through the Corn</td>
-                  <td><a href="midi/String6/21DancingCorn.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/21DancingCorn.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>The Rain has Stopped</td>
-                  <td><a href="midi/String6/22RainStopped.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/22RainStopped.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Glendy Burke</td>
-                  <td><a href="midi/String6/23GlendyBurke.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/23GlendyBurke.mp3" download>MP3 Download</a></td>
-                </tr>
-              </tbody>
-      
-              <tbody id="level_3d">
-                <tr>
-                  <td>Etude 1</td>
-                  <td><a href="midi/String6/25Etude1.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/25Etude1.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Sourwood Mountain</td>
-                  <td><a href="midi/String6/26Sourwood.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/26Sourwood.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Happy Plowman</td>
-                  <td><a href="midi/String6/27Plowman.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/27Plowman.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Etude 3</td>
-                  <td><a href="midi/String6/28Etude3.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/28Etude3.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Exercise in 1<sup>st</sup> Position</td>
-                  <td><a href="midi/String6/29ExerciseInFirstPosit.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/29ExerciseInFirstPosit.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Alla Turca</td>
-                  <td><a href="midi/String6/20AllaTurca.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String6/20AllaTurca.mp3" download>MP3 Download</a></td>
-                </tr>
-              </tbody>
-            </table>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Song</th>
+              <th>MIDI Download</th>
+              <th>MP3 Download</th>
+            </tr>
+          </thead>
+
+          <tbody id="level_3a">
+            <tr>
+              <td>Song Without Words #1</td>
+              <td><a href="midi/String6/01Song1.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/01Song1.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Song Without Words #2</td>
+              <td><a href="midi/String6/02Song2.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/02Song2.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Song Without Words #3</td>
+              <td><a href="midi/String6/03Song3.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/03Song3.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Lesson 4, II</td>
+              <td><a href="midi/String6/04lesson4II.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/04lesson4II.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Lesson 8, II</td>
+              <td><a href="midi/String6/05lesson8II.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/05lesson8II.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Holla Hi Holla Ho</td>
+              <td><a href="midi/String6/06HollaHi.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/06HollaHi.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Waltzing Matilda</td>
+              <td><a href="midi/String6/07WaltzingMatilda.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/07WaltzingMatilda.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Lesson 23, II</td>
+              <td><a href="midi/String6/08Lesson23II.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/08Lesson23II.mp3" download>MP3 Download</a></td>
+            </tr>
+          </tbody>
+
+          <tbody id="level_3b">
+            <tr>
+              <td>Alouette</td>
+              <td><a href="midi/String6/09Alouette.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/09Alouette.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>For the Beauty of the Earth</td>
+              <td><a href="midi/String6/10ForTheBeauty.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/10ForTheBeauty.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>College Hymn</td>
+              <td><a href="midi/String6/11CollegeHymn.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/11CollegeHymn.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Chester</td>
+              <td><a href="midi/String6/12Chester.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/12Chester.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Muffin Man</td>
+              <td><a href="midi/String6/13MuffinMan.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/13MuffinMan.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>German Chorale</td>
+              <td><a href="midi/String6/14GermanChorale.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/14GermanChorale.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Simple Gifts</td>
+              <td><a href="midi/String6/15SimpleGifts.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/15SimpleGifts.mp3" download>MP3 Download</a></td>
+            </tr>
+          </tbody>
+
+          <tbody id="level_3c">
+            <tr>
+              <td>Minstrel Boy</td>
+              <td><a href="midi/String6/17MinstrelBoy.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/17MinstrelBoy.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>I've Been Working on the Railroad</td>
+              <td><a href="midi/String6/18Railroad.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/18Railroad.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Galway Piper</td>
+              <td><a href="midi/String6/20GalwayPiper.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/20GalwayPiper.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Dancing Through the Corn</td>
+              <td><a href="midi/String6/21DancingCorn.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/21DancingCorn.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>The Rain has Stopped</td>
+              <td><a href="midi/String6/22RainStopped.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/22RainStopped.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Glendy Burke</td>
+              <td><a href="midi/String6/23GlendyBurke.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/23GlendyBurke.mp3" download>MP3 Download</a></td>
+            </tr>
+          </tbody>
+
+          <tbody id="level_3d">
+            <tr>
+              <td>Etude 1</td>
+              <td><a href="midi/String6/25Etude1.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/25Etude1.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Sourwood Mountain</td>
+              <td><a href="midi/String6/26Sourwood.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/26Sourwood.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Happy Plowman</td>
+              <td><a href="midi/String6/27Plowman.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/27Plowman.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Etude 3</td>
+              <td><a href="midi/String6/28Etude3.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/28Etude3.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Exercise in 1<sup>st</sup> Position</td>
+              <td><a href="midi/String6/29ExerciseInFirstPosit.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/29ExerciseInFirstPosit.mp3" download>MP3 Download</a></td>
+            </tr>
+            <tr>
+              <td>Alla Turca</td>
+              <td><a href="midi/String6/20AllaTurca.mid" download>MIDI Download</a></td>
+              <td><a href="mp3/String6/20AllaTurca.mp3" download>MP3 Download</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 7th Grade -->
+      <div role="tabpanel" class="tab-pane" id="level4">
+        <div class="page-header">
+          <h2 style="display:inline;">
+            7<sup>th</sup> Grade <small>Level 4</small>
+          </h2>
+
+          <div style="float:right" class="btn-group" role="group" id="table-controls-7">
+
+            <div class="btn-group" role="group">
+             <div class="dropdown">
+               <button class="btn btn-primary dropdown-toggle" type="button" id="grade-7-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-filter"></span> <span id="grade-7-filter-text">Filter</span>
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="grade-7-filter">
+                <li><a onclick="show_level_4a()">Show Level 4A</a></li>
+                <li><a onclick="show_level_4b()">Show Level 4B</a></li>
+                <li><a onclick="show_level_4c()">Show Level 4C</a></li>
+                <li><a onclick="show_level_4d()">Show Level 4D</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a onclick="show_level_4all()">Show All</a></li>
+              </ul>
+            </div>
           </div>
 
-          <!-- 7th Grade -->
-          <div role="tabpanel" class="tab-pane" id="level4">
-            <div class="page-header">
-              <h2 style="display:inline;">
-                7<sup>th</sup> Grade <small>Level 4</small>
-              </h2>
-
-              <div style="float:right" class="btn-group" role="group" id="table-controls-7">
-
-                <div class="btn-group" role="group">
-                 <div class="dropdown">
-                   <button class="btn btn-primary dropdown-toggle" type="button" id="grade-7-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <span class="glyphicon glyphicon-filter"></span> <span id="grade-7-filter-text">Filter</span>
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="grade-7-filter">
-                      <li><a onclick="show_level_4a()">Show Level 4A</a></li>
-                      <li><a onclick="show_level_4b()">Show Level 4B</a></li>
-                      <li><a onclick="show_level_4c()">Show Level 4C</a></li>
-                      <li><a onclick="show_level_4d()">Show Level 4D</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a onclick="show_level_4all()">Show All</a></li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="btn-group" role="group">
-                  <button type="button" class="btn btn-success" onclick="window.location = 'midi/String7_midi.zip'"><span class="glyphicon glyphicon-save"></span>MIDI .zip (~57 KB)</button>
-                </div>
-
-                <div class="btn-group" role="group">
-                  <button type="button" class="btn btn-danger" onclick="window.location = 'mp3/String7_mp3.zip'"><span class="glyphicon glyphicon-save"></span> MP3 .zip (~26 MB)</button>
-                </div>
-              </div>
-            </div>
-
-            <table class="table table-bordered table-hover">
-              <thead>
-                <tr>
-                  <th>Song</th>
-                  <th>MIDI Download</th>
-                  <th>MP3 Download</th>
-                </tr>
-              </thead>
-
-              <tbody id="level_4a">
-                <tr>
-                  <td>March from Scipio</td>
-                  <td><a href="midi/String7/01Scipio.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/01Scipio.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>German Dance</td>
-                  <td><a href="midi/String7/02GermanDance.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/02GermanDance.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Andante from Surprise Symphony</td>
-                  <td><a href="midi/String7/03AndanteSurprise.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/03AndanteSurprise.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Minuet <small>by Handel</small></td>
-                  <td><a href="midi/String7/04MinuetHandel.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/04MinuetHandel.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Symphony № 1</td>
-                  <td><a href="midi/String7/05Symphony1.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/05Symphony1.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Rondeau</td>
-                  <td><a href="midi/String7/06Rondeau.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/06Rondeau.mp3" download>MP3 Download</a></td>
-                </tr>
-              </tbody>
-
-              <tbody id="level_4b">
-                <tr>
-                  <td>March <small>by Handel</small></td>
-                  <td><a href="midi/String7/07HandelMarch.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/07HandelMarch.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Trio and Minuet</td>
-                  <td><a href="midi/String7/08TrioMinuet.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/08TrioMinuet.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Voluntary</td>
-                  <td><a href="midi/String7/09Voluntary.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/09Voluntary.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Two Airs</td>
-                  <td><a href="midi/String7/10TwoAirs.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/10TwoAirs.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Minuet <small>by Bach</small></td>
-                  <td><a href="midi/String7/11BachMinuet.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/11BachMinuet.mp3" download>MP3 Download</a></td>
-                </tr>
-              </tbody>
-      
-              <tbody id="level_4c">
-                <tr>
-                  <td>Burlesque</td>
-                  <td><a href="midi/String7/13Burlesque.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/13Burlesque.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Gavotte <small>by Corelli</small></td>
-                  <td><a href="midi/String7/14GavotteCorelli.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/14GavotteCorelli.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Bouree</td>
-                  <td><a href="midi/String7/15Bouree.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/15Bouree.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Gavotte <small>by Dandrieu</small></td>
-                  <td><a href="midi/String7/16GavotteDandrieu.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/16GavotteDandrieu.mp3" download>MP3 Download</a></td>
-                </tr>
-              </tbody>
-      
-              <tbody id="level_4d">
-                <tr>
-                  <td>Rondo a Capriccio</td>
-                  <td><a href="midi/String7/17RondoCapriccio.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/17RondoCapriccio.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Gavotte <small>by Gossec</small></td>
-                  <td><a href="midi/String7/18GavotteGossec.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/18GavotteGossec.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Hunter's Chorus</td>
-                  <td><a href="midi/String7/19HuntersChorus.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/19HuntersChorus.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Etude № 1 <small>by Wohlfahrt</small></td>
-                  <td><a href="midi/String7/20EtudeNo1.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/20EtudeNo1.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Student Concertino № 4</td>
-                  <td><a href="midi/String7/21HuberConcertino.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String7/21HuberConcertino.mp3" download>MP3 Download</a></td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-success" onclick="window.location = 'midi/String7_midi.zip'"><span class="glyphicon glyphicon-save"></span>MIDI .zip (~57 KB)</button>
           </div>
 
-          <!-- 8th Grade -->
-          <div role="tabpanel" class="tab-pane" id="level5">
-            <div class="page-header">
-              <h2 style="display:inline;">
-                8<sup>th</sup> Grade <small>Level 5</small>
-              </h2>
-
-              <div style="float:right" class="btn-group" role="group" id="table-controls-8">
-
-                <div class="btn-group" role="group">
-                 <div class="dropdown">
-                   <button class="btn btn-primary dropdown-toggle" type="button" id="grade-8-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <span class="glyphicon glyphicon-filter"></span> <span id="grade-8-filter-text">Filter</span>
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="grade-8-filter">
-                      <li><a onclick="show_level_5a()">Show Level 5A</a></li>
-                      <li><a onclick="show_level_5b()">Show Level 5B</a></li>
-                      <li><a onclick="show_level_5c()">Show Level 5C</a></li>
-                      <li><a onclick="show_level_5d()">Show Level 5D</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a onclick="show_level_5all()">Show All</a></li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="btn-group" role="group">
-                  <button type="button" class="btn btn-success" onclick="window.location = 'midi/String8_midi.zip'"><span class="glyphicon glyphicon-save"></span>MIDI .zip (~56 KB)</button>
-                </div>
-
-                <div class="btn-group" role="group">
-                  <button type="button" class="btn btn-danger" onclick="window.location = 'mp3/String8_mp3.zip'"><span class="glyphicon glyphicon-save"></span> MP3 .zip (~63 MB)</button>
-                </div>
-              </div>
-            </div>
-
-            <table class="table table-bordered table-hover">
-              <thead>
-                <tr>
-                  <th>Song</th>
-                  <th>MIDI Download</th>
-                  <th>MP3 Download</th>
-                </tr>
-              </thead>
-
-              <tbody id="level_5a">
-                <tr>
-                  <td>Romance</td>
-                  <td><a href="midi/String8/01Romance.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String8/01Romance.mp3" download>MP3 Download</a></td>
-                </tr>
-                <tr>
-                  <td>Gavotte <small>by Handel</small></td>
-                  <td><a href="midi/String8/03GavotteHandel.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String8/03GavotteHandel.mp3" download>MP3 Download</a></td>
-                </tr>
-              </tbody>
-
-              <tbody id="level_5b">
-                <tr>
-                  <td>Allegro Moderato</td>
-                  <td><a href="midi/String8/02AllegroModerato.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String8/02AllegroModerato.mp3" download>MP3 Download</a></td>
-                </tr>
-              </tbody>
-      
-              <tbody id="level_5c">
-                <tr>
-                  <td>Sonata № 7</td>
-                  <td><a href="midi/String8/06Sonata7.mid" download>MIDI Download</a></td>
-                  <td><a href="mp3/String8/06Sonata7.mp3" download>MP3 Download</a></td>
-                </tr>
-              </tbody>
-      
-              <tbody id="level_5d">
-                <tr>
-                  <td>Etude № 33</td>
-                  <td>
-                    <a href="midi/String8/G8EtudeNo33.mid" download>Violin MIDI Download</a></br>
-                    <a href="midi/String8/G8EtudeNo33CelloViola.mid" download>Viola/Cello/Bass MIDI Download</a>
-                  </td>
-                  <td>
-                    <a href="mp3/String8/G8EtudeNo33.mp3" download>Violin MP3 Download</a></br>
-                    <a href="mp3/String8/G8EtudeNo33CelloViola.mp3" download>Viola/Cello/Bass MP3 Download</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Concerto № 5 <small>by Seitz</small></td>
-                  <td>
-                    <a href="midi/String8/G8SeitzNo5Violin.mid" download>Violin MIDI Download</a></br>
-                    <a href="midi/String8/G8SeitzNo5Violin90.mid" download>Violin @90 BPM MIDI Download</a></br>
-                    <a href="midi/String8/G8SeitzNo5CelloViola.mid" download>Viola/Cello/Bass MIDI Download</a></br>
-                    <a href="midi/String8/G8SeitzNo5CelloViola90.mid" download>Viola/Cello/Bass @90 BPM MIDI Download</a>
-                  </td>
-                  <td>
-                    <a href="mp3/String8/G8SeitzNo5Violin.mp3" download>Violin MP3 Download</a></br>
-                    <a href="mp3/String8/G8SeitzNo5Violin90.mp3" download>Violin @90 BPM MP3 Download</a></br>
-                    <a href="mp3/String8/G8SeitzNo5CelloViola.mp3" download>Viola/Cello/Bass MP3 Download</a></br>
-                    <a href="mp3/String8/G8SeitzNo5CelloViola90.mp3" download>Viola/Cello/Bass @90 BPM MP3 Download</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-danger" onclick="window.location = 'mp3/String7_mp3.zip'"><span class="glyphicon glyphicon-save"></span> MP3 .zip (~26 MB)</button>
           </div>
         </div>
       </div>
-    <script src="js/testing.js"></script>
 
-    <link rel="stylesheet" href="css/footer.css" />
-    <footer id="footer" class="footer">
-      <div class="container">
-        <p class="text-muted">© 2017 Las Flores Middle School Orchestra<br>File sizes may vary ±2 KB/MB.<br><a href="https://github.com/LFMSOrchestra/LFMSOrchestra.github.io/blob/master/.github/CONTRIBUTING.md">Bugs?</a></p>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>Song</th>
+            <th>MIDI Download</th>
+            <th>MP3 Download</th>
+          </tr>
+        </thead>
+
+        <tbody id="level_4a">
+          <tr>
+            <td>March from Scipio</td>
+            <td><a href="midi/String7/01Scipio.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/01Scipio.mp3" download>MP3 Download</a></td>
+          </tr>
+          <tr>
+            <td>German Dance</td>
+            <td><a href="midi/String7/02GermanDance.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/02GermanDance.mp3" download>MP3 Download</a></td>
+          </tr>
+          <tr>
+            <td>Andante from Surprise Symphony</td>
+            <td><a href="midi/String7/03AndanteSurprise.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/03AndanteSurprise.mp3" download>MP3 Download</a></td>
+          </tr>
+          <tr>
+            <td>Minuet <small>by Handel</small></td>
+            <td><a href="midi/String7/04MinuetHandel.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/04MinuetHandel.mp3" download>MP3 Download</a></td>
+          </tr>
+          <tr>
+            <td>Symphony № 1</td>
+            <td><a href="midi/String7/05Symphony1.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/05Symphony1.mp3" download>MP3 Download</a></td>
+          </tr>
+          <tr>
+            <td>Rondeau</td>
+            <td><a href="midi/String7/06Rondeau.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/06Rondeau.mp3" download>MP3 Download</a></td>
+          </tr>
+        </tbody>
+
+        <tbody id="level_4b">
+          <tr>
+            <td>March <small>by Handel</small></td>
+            <td><a href="midi/String7/07HandelMarch.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/07HandelMarch.mp3" download>MP3 Download</a></td>
+          </tr>
+          <tr>
+            <td>Trio and Minuet</td>
+            <td><a href="midi/String7/08TrioMinuet.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/08TrioMinuet.mp3" download>MP3 Download</a></td>
+          </tr>
+          <tr>
+            <td>Voluntary</td>
+            <td><a href="midi/String7/09Voluntary.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/09Voluntary.mp3" download>MP3 Download</a></td>
+          </tr>
+          <tr>
+            <td>Two Airs</td>
+            <td><a href="midi/String7/10TwoAirs.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/10TwoAirs.mp3" download>MP3 Download</a></td>
+          </tr>
+          <tr>
+            <td>Minuet <small>by Bach</small></td>
+            <td><a href="midi/String7/11BachMinuet.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/11BachMinuet.mp3" download>MP3 Download</a></td>
+          </tr>
+        </tbody>
+
+        <tbody id="level_4c">
+          <tr>
+            <td>Burlesque</td>
+            <td><a href="midi/String7/13Burlesque.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/13Burlesque.mp3" download>MP3 Download</a></td>
+          </tr>
+          <tr>
+            <td>Gavotte <small>by Corelli</small></td>
+            <td><a href="midi/String7/14GavotteCorelli.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/14GavotteCorelli.mp3" download>MP3 Download</a></td>
+          </tr>
+          <tr>
+            <td>Bouree</td>
+            <td><a href="midi/String7/15Bouree.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/15Bouree.mp3" download>MP3 Download</a></td>
+          </tr>
+          <tr>
+            <td>Gavotte <small>by Dandrieu</small></td>
+            <td><a href="midi/String7/16GavotteDandrieu.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/16GavotteDandrieu.mp3" download>MP3 Download</a></td>
+          </tr>
+        </tbody>
+
+        <tbody id="level_4d">
+          <tr>
+            <td>Rondo a Capriccio</td>
+            <td><a href="midi/String7/17RondoCapriccio.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/17RondoCapriccio.mp3" download>MP3 Download</a></td>
+          </tr>
+          <tr>
+            <td>Gavotte <small>by Gossec</small></td>
+            <td><a href="midi/String7/18GavotteGossec.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/18GavotteGossec.mp3" download>MP3 Download</a></td>
+          </tr>
+          <tr>
+            <td>Hunter's Chorus</td>
+            <td><a href="midi/String7/19HuntersChorus.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/19HuntersChorus.mp3" download>MP3 Download</a></td>
+          </tr>
+          <tr>
+            <td>Etude № 1 <small>by Wohlfahrt</small></td>
+            <td><a href="midi/String7/20EtudeNo1.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/20EtudeNo1.mp3" download>MP3 Download</a></td>
+          </tr>
+          <tr>
+            <td>Student Concertino № 4</td>
+            <td><a href="midi/String7/21HuberConcertino.mid" download>MIDI Download</a></td>
+            <td><a href="mp3/String7/21HuberConcertino.mp3" download>MP3 Download</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 8th Grade -->
+    <div role="tabpanel" class="tab-pane" id="level5">
+      <div class="page-header">
+        <h2 style="display:inline;">
+          8<sup>th</sup> Grade <small>Level 5</small>
+        </h2>
+
+        <div style="float:right" class="btn-group" role="group" id="table-controls-8">
+
+          <div class="btn-group" role="group">
+           <div class="dropdown">
+             <button class="btn btn-primary dropdown-toggle" type="button" id="grade-8-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="glyphicon glyphicon-filter"></span> <span id="grade-8-filter-text">Filter</span>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="grade-8-filter">
+              <li><a onclick="show_level_5a()">Show Level 5A</a></li>
+              <li><a onclick="show_level_5b()">Show Level 5B</a></li>
+              <li><a onclick="show_level_5c()">Show Level 5C</a></li>
+              <li><a onclick="show_level_5d()">Show Level 5D</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a onclick="show_level_5all()">Show All</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-success" onclick="window.location = 'midi/String8_midi.zip'"><span class="glyphicon glyphicon-save"></span>MIDI .zip (~56 KB)</button>
+        </div>
+
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-danger" onclick="window.location = 'mp3/String8_mp3.zip'"><span class="glyphicon glyphicon-save"></span> MP3 .zip (~63 MB)</button>
+        </div>
       </div>
-    </footer>
-    <script>document.getElementsByTagName('body')[0].style.marginBottom = $('#footer').height() + 'px'</script>
-  </body>
+    </div>
+
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>Song</th>
+          <th>MIDI Download</th>
+          <th>MP3 Download</th>
+        </tr>
+      </thead>
+
+      <tbody id="level_5a">
+        <tr>
+          <td>Romance</td>
+          <td><a href="midi/String8/01Romance.mid" download>MIDI Download</a></td>
+          <td><a href="mp3/String8/01Romance.mp3" download>MP3 Download</a></td>
+        </tr>
+        <tr>
+          <td>Gavotte <small>by Handel</small></td>
+          <td><a href="midi/String8/03GavotteHandel.mid" download>MIDI Download</a></td>
+          <td><a href="mp3/String8/03GavotteHandel.mp3" download>MP3 Download</a></td>
+        </tr>
+      </tbody>
+
+      <tbody id="level_5b">
+        <tr>
+          <td>Allegro Moderato</td>
+          <td><a href="midi/String8/02AllegroModerato.mid" download>MIDI Download</a></td>
+          <td><a href="mp3/String8/02AllegroModerato.mp3" download>MP3 Download</a></td>
+        </tr>
+      </tbody>
+
+      <tbody id="level_5c">
+        <tr>
+          <td>Sonata № 7</td>
+          <td><a href="midi/String8/06Sonata7.mid" download>MIDI Download</a></td>
+          <td><a href="mp3/String8/06Sonata7.mp3" download>MP3 Download</a></td>
+        </tr>
+      </tbody>
+
+      <tbody id="level_5d">
+        <tr>
+          <td>Etude № 33</td>
+          <td>
+            <a href="midi/String8/G8EtudeNo33.mid" download>Violin MIDI Download</a></br>
+            <a href="midi/String8/G8EtudeNo33CelloViola.mid" download>Viola/Cello/Bass MIDI Download</a>
+          </td>
+          <td>
+            <a href="mp3/String8/G8EtudeNo33.mp3" download>Violin MP3 Download</a></br>
+            <a href="mp3/String8/G8EtudeNo33CelloViola.mp3" download>Viola/Cello/Bass MP3 Download</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Concerto № 5 <small>by Seitz</small></td>
+          <td>
+            <a href="midi/String8/G8SeitzNo5Violin.mid" download>Violin MIDI Download</a></br>
+            <a href="midi/String8/G8SeitzNo5Violin90.mid" download>Violin @90 BPM MIDI Download</a></br>
+            <a href="midi/String8/G8SeitzNo5CelloViola.mid" download>Viola/Cello/Bass MIDI Download</a></br>
+            <a href="midi/String8/G8SeitzNo5CelloViola90.mid" download>Viola/Cello/Bass @90 BPM MIDI Download</a>
+          </td>
+          <td>
+            <a href="mp3/String8/G8SeitzNo5Violin.mp3" download>Violin MP3 Download</a></br>
+            <a href="mp3/String8/G8SeitzNo5Violin90.mp3" download>Violin @90 BPM MP3 Download</a></br>
+            <a href="mp3/String8/G8SeitzNo5CelloViola.mp3" download>Viola/Cello/Bass MP3 Download</a></br>
+            <a href="mp3/String8/G8SeitzNo5CelloViola90.mp3" download>Viola/Cello/Bass @90 BPM MP3 Download</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+<script src="js/testing.js"></script>
+
+<link rel="stylesheet" href="css/footer.css" />
+<footer id="footer" class="footer">
+  <div class="container">
+    <p class="text-muted">© 2017 Las Flores Middle School Orchestra<br>File sizes may vary ±2 KB/MB.<br><a href="https://github.com/LFMSOrchestra/LFMSOrchestra.github.io/blob/master/.github/CONTRIBUTING.md">Bugs?</a></p>
+  </div>
+</footer>
+<script>document.getElementsByTagName('body')[0].style.marginBottom = $('#footer').height() + 'px'</script>
+</body>
 </html>

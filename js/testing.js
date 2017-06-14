@@ -18,21 +18,21 @@ function level_3_filter_ico_update(){
 
   switch(level_3_current){
     case "3a":
-      level_3_filter_text.innerText = "Level 3A";
-      break;
+    level_3_filter_text.innerText = "Level 3A";
+    break;
     case "3b":
-      level_3_filter_text.innerText = "Level 3B";
-      break;
+    level_3_filter_text.innerText = "Level 3B";
+    break;
     case "3c":
-      level_3_filter_text.innerText = "Level 3C";
-      break;
+    level_3_filter_text.innerText = "Level 3C";
+    break;
     case "3d":
-      level_3_filter_text.innerText = "Level 3D";
-      break;
+    level_3_filter_text.innerText = "Level 3D";
+    break;
     default:
-      level_3_filter_text.innerText = "Filter"
+    level_3_filter_text.innerText = "Filter"
   }
-      
+
 }
 
 function show_level_3a(){
@@ -100,21 +100,21 @@ function level_4_filter_ico_update(){
 
   switch(level_4_current){
     case "4a":
-      level_4_filter_text.innerText = "Level 4A";
-      break;
+    level_4_filter_text.innerText = "Level 4A";
+    break;
     case "4b":
-      level_4_filter_text.innerText = "Level 4B";
-      break;
+    level_4_filter_text.innerText = "Level 4B";
+    break;
     case "4c":
-      level_4_filter_text.innerText = "Level 4C";
-      break;
+    level_4_filter_text.innerText = "Level 4C";
+    break;
     case "4d":
-      level_4_filter_text.innerText = "Level 4D";
-      break;
+    level_4_filter_text.innerText = "Level 4D";
+    break;
     default:
-      level_4_filter_text.innerText = "Filter"
+    level_4_filter_text.innerText = "Filter"
   }
-      
+
 }
 
 function show_level_4a(){
@@ -182,21 +182,21 @@ function level_5_filter_ico_update(){
 
   switch(level_5_current){
     case "5a":
-      level_5_filter_text.innerText = "Level 5A";
-      break;
+    level_5_filter_text.innerText = "Level 5A";
+    break;
     case "5b":
-      level_5_filter_text.innerText = "Level 5B";
-      break;
+    level_5_filter_text.innerText = "Level 5B";
+    break;
     case "5c":
-      level_5_filter_text.innerText = "Level 5C";
-      break;
+    level_5_filter_text.innerText = "Level 5C";
+    break;
     case "5d":
-      level_5_filter_text.innerText = "Level 5D";
-      break;
+    level_5_filter_text.innerText = "Level 5D";
+    break;
     default:
-      level_5_filter_text.innerText = "Filter"
+    level_5_filter_text.innerText = "Filter"
   }
-      
+
 }
 
 function show_level_5a(){
