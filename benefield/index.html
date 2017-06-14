@@ -1,0 +1,519 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <meta name="viewport" content="width = 750, minimum-scale = 0.25, maximum-scale = 1.60">
+  <meta name="GENERATOR" content="Freeway Express 6.1.2">
+  <style type="text/css">
+  <!-- body {
+    margin: 0px;
+    background-color: #fff;
+    height: 100%
+  }
+  
+  html {
+    height: 100%
+  }
+  
+  form {
+    margin: 0px
+  }
+  
+  body > form {
+    height: 100%
+  }
+  
+  img {
+    margin: 0px;
+    border-style: none
+  }
+  
+  button {
+    margin: 0px;
+    border-style: none;
+    padding: 0px;
+    background-color: transparent;
+    vertical-align: top
+  }
+  
+  table {
+    empty-cells: hide
+  }
+  
+  td {
+    padding: 0px
+  }
+  
+  .f-sp {
+    font-size: 1px;
+    visibility: hidden
+  }
+  
+  .f-lp {
+    margin-bottom: 0px
+  }
+  
+  .f-fp {
+    margin-top: 0px
+  }
+  
+  .style58 {
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 150%;
+    text-transform: none;
+    font-variant: normal;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    line-height: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-indent: 0px;
+    direction: ltr;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0.1px
+  }
+  
+  .CentreText {
+    line-height: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-indent: 0px;
+    direction: ltr;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0.1px
+  }
+  
+  .style20 {
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 150%;
+    text-transform: none;
+    font-variant: normal;
+    letter-spacing: 0px;
+    word-spacing: 0px
+  }
+  
+  .style111 {
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 300%;
+    text-transform: none;
+    font-variant: normal;
+    letter-spacing: 0px;
+    word-spacing: 0px
+  }
+  
+  .style68 {
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    text-transform: none;
+    font-variant: normal;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    line-height: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-indent: 0px;
+    direction: ltr;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0.1px
+  }
+  
+  .style32 {
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    text-transform: none;
+    font-variant: normal;
+    letter-spacing: 0px;
+    word-spacing: 0px
+  }
+  
+  .style78 {
+    font-size: 36px
+  }
+  
+  .style91 {
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 300%;
+    text-transform: none;
+    font-variant: normal;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    line-height: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-indent: 0px;
+    direction: ltr;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0.1px
+  }
+  
+  .style35 {
+    color: #c00;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    text-transform: none;
+    font-variant: normal;
+    letter-spacing: 0px;
+    word-spacing: 0px
+  }
+  
+  #PageDiv {
+    position: relative;
+    min-height: 100%
+  }
+  
+  -->
+  </style>
+  <!--[if lt IE 7]><link rel=stylesheet href="css/ie6.css"><style type="text/css">
+#PageDiv { height:100% }
+</style>
+<![endif]-->
+  <!--[if lt IE 9]><script src="Resources/html5shiv.js"></script><![endif]-->
+  <script src="Resources/FW_Object.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+  var usingIEFix = false;
+  //]]>
+  </script>
+  <!--[if lt IE 7]>
+<script type="text/javascript">//<![CDATA[
+usingIEFix = true;
+//]]></script>
+<![endif]-->
+  <script type="text/javascript">
+  //<![CDATA[
+
+  function FWStripFileFromFilterString(filterString) {
+    var start, end;
+    var strSrc = "src='";
+    var strRes = "";
+
+    start = filterString.indexOf(strSrc);
+
+    if (start != -1) {
+      start += strSrc.length;
+
+      end = filterString.indexOf("',", start);
+      if (end != -1) {
+        strRes = filterString.substring(start, end);
+      }
+    }
+
+    return strRes;
+  }
+
+  var fwIsNetscape = navigator.appName == 'Netscape';
+
+  fwLoad = new Object;
+
+  function FWLoad(image) {
+    if (!document.images)
+      return null;
+    if (!fwLoad[image]) {
+      fwLoad[image] = new Image;
+      fwLoad[image].src = image;
+    }
+    return fwLoad[image].src;
+  }
+
+  fwRestore = new Object;
+
+  function FWRestore(msg, chain) {
+    if (document.images)
+      for (var i in fwRestore) {
+        var r = fwRestore[i];
+        if (r && (!chain || r.chain == chain) && r.msg == msg) {
+          r.src = FWLoad(r.old);
+          fwRestore[i] = null;
+        }
+      }
+  }
+
+  function FWLSwap(name, msg, newImg, layer, chain, trigger) {
+    var r = fwRestore[name];
+    if (document.images && (!r || r.msg < msg)) {
+      var uselayers = fwIsNetscape && document.layers && layer != '';
+      var hld;
+      if (uselayers)
+        hld = document.layers[layer].document;
+      else
+        hld = document;
+      var im = hld.getElementById(name);
+      if (!im.old) {
+        if (usingIEFix && im.runtimeStyle.filter)
+          im.old = FWStripFileFromFilterString(im.runtimeStyle.filter);
+        else
+          im.old = im.src;
+      }
+
+      im.msg = msg;
+      im.chain = chain;
+      im.trigger = trigger;
+      if (newImg) im.src = FWLoad(newImg);
+      fwRestore[name] = im;
+    }
+  }
+
+  function FWCallHit(func, targNum, msg) {
+    if (func)
+      for (var i in func)
+        func[i](targNum, msg);
+  }
+
+  function FW_Hit(frameset, chain, targNum, msg) {
+    if (frameset && frameset.length) {
+      for (var i = 0; i < frameset.length; i++) {
+        try {
+          FW_Hit(frameset[i].frames, chain, targNum, msg);
+        } catch (e) {}
+      }
+      FWCallHit(frameset.window["FT_" + chain], targNum, msg);
+    } else
+      FWCallHit(frameset.window["FT_" + chain], targNum, msg);
+  }
+
+  fwHit = new Object;
+
+  function FWSlave(frameset, chain, targNum, msg) {
+    if (msg == 1) fwHit[chain] = targNum;
+    FW_Hit(frameset, chain, targNum, 1);
+  }
+
+  function FWSRestore(frameset, chain) {
+    var hit = fwHit[chain];
+    if (hit)
+      FW_Hit(frameset, chain, hit, 0);
+    fwHit[chain] = null;
+  }
+
+  function FWPreload() {
+    FWLoad("Resources/button1k.gif");
+    FWLoad("Resources/button1j.gif");
+    FWLoad("Resources/button1a5.gif");
+    FWLoad("Resources/button1a4.gif");
+    FWLoad("Resources/button1a1k.gif");
+    FWLoad("Resources/button1a1j.gif");
+    FWLoad("Resources/button1a1a5.gif");
+    FWLoad("Resources/button1a1a4.gif");
+    FWLoad("Resources/button1a1a1k.gif");
+    FWLoad("Resources/button1a1a1j.gif");
+    FWLoad("Resources/button1a1a1a5.gif");
+    FWLoad("Resources/button1a1a1a4.gif");
+    FWLoad("Resources/button1a1a1a1k.gif");
+    FWLoad("Resources/button1a1a1a1j.gif");
+  } //]]>
+  </script>
+</head>
+
+<body onload="FWPreload()">
+  <style>
+    body {
+      margin-top: 20px;
+    }
+
+    #header {
+      position: fixed;
+      top: 0;
+      background-color: goldenrod;
+      width: 100%;
+      height: 20px;
+    }
+  </style>
+  <div id="header"><strong>Note:</strong> This is the website archive of Mr. Benefield's old site. Links may be broken. <a href="/index.html">Go Home</a></div>
+  <div id="PageDiv">
+    <table style="border-spacing:0px; width:743px; table-layout:fixed">
+      <colgroup>
+        <col style="width:8px">
+        <col style="width:82px">
+        <col style="width:11px">
+        <col style="width:82px">
+        <col style="width:11px">
+        <col style="width:82px">
+        <col style="width:11px">
+        <col style="width:82px">
+        <col style="width:12px">
+        <col style="width:82px">
+        <col style="width:11px">
+        <col style="width:82px">
+        <col style="width:11px">
+        <col style="width:82px">
+        <col style="width:11px">
+        <col style="width:82px">
+        <col style="width:1px">
+      </colgroup>
+      <tr style="vertical-align:top">
+        <td colspan=16 style="height:8px"></td>
+        <td style="height:8px"></td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="height:45px"></td>
+        <td style="height:45px"><img src="Resources/buttonselected9.gif" width=82 height=45 alt="" style="float:left"></td>
+        <td style="height:45px"></td>
+        <td style="height:45px"><img src="Resources/button1k.gif" width=82 height=45 alt="" usemap="#map1" style="float:left" id="img1"></td>
+        <td style="height:45px"></td>
+        <td style="height:45px"><img src="Resources/button1a5.gif" width=82 height=45 alt="" usemap="#map2" style="float:left" id="img2"></td>
+        <td style="height:45px"></td>
+        <td style="height:45px"><img src="Resources/button1a1k.gif" width=82 height=45 alt="" usemap="#map3" style="float:left" id="img3"></td>
+        <td style="height:45px"></td>
+        <td style="height:45px"><img src="Resources/button1a1a5.gif" width=82 height=45 alt="" usemap="#map4" style="float:left" id="img4"></td>
+        <td style="height:45px"></td>
+        <td style="height:45px"><img src="Resources/button1a1a1k.gif" width=82 height=45 alt="" usemap="#map5" style="float:left" id="img5"></td>
+        <td style="height:45px"></td>
+        <td style="height:45px"><img src="Resources/button1a1a1a5.gif" width=82 height=45 alt="" usemap="#map6" style="float:left" id="img6"></td>
+        <td style="height:45px"></td>
+        <td style="height:45px"><img src="Resources/button1a1a1a1k.gif" width=82 height=45 alt="" usemap="#map7" style="float:left" id="img7"></td>
+        <td style="height:45px"></td>
+      </tr>
+      <tr class="f-sp">
+        <td><img src="Resources/_clear.gif" width=8 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=82 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=11 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=82 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=11 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=82 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=11 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=82 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=12 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=82 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=11 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=82 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=11 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=82 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=11 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=82 height=1 alt="" style="float:left"></td>
+        <td style="height:3px"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td>
+      </tr>
+    </table>
+    <table style="border-spacing:0px; width:743px; table-layout:fixed">
+      <colgroup>
+        <col style="width:8px">
+        <col style="width:734px">
+        <col style="width:1px">
+      </colgroup>
+      <tr style="vertical-align:top">
+        <td style="height:45px"></td>
+        <td style="height:45px"><img src="Resources/titleblock3.gif" width=734 height=45 alt="" style="float:left"></td>
+        <td style="height:45px"></td>
+      </tr>
+      <tr class="f-sp">
+        <td><img src="Resources/_clear.gif" width=8 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=734 height=1 alt="" style="float:left"></td>
+        <td style="height:6px"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td>
+      </tr>
+    </table>
+    <table style="border-spacing:0px; width:743px; table-layout:fixed">
+      <colgroup>
+        <col style="width:8px">
+        <col style="width:734px">
+        <col style="width:1px">
+      </colgroup>
+      <tr style="vertical-align:top">
+        <td style="height:25px"></td>
+        <td style="height:25px"><img src="Resources/line32.gif" width=734 height=25 alt="" style="float:left"></td>
+        <td style="height:25px"></td>
+      </tr>
+      <tr class="f-sp">
+        <td><img src="Resources/_clear.gif" width=8 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=734 height=1 alt="" style="float:left"></td>
+        <td style="height:2px"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td>
+      </tr>
+    </table>
+    <table style="border-spacing:0px; width:737px; table-layout:fixed">
+      <colgroup>
+        <col style="width:8px">
+        <col style="width:728px">
+        <col style="width:1px">
+      </colgroup>
+      <tr style="vertical-align:top">
+        <td style="height:974px"></td>
+        <td style="height:974px">
+          <p class="style58" lang="en">&nbsp;</p>
+          <p class="style58" lang="en">&quot;If people are good only because they fear punishment, and hope for reward, then we are a sorry lot indeed.&quot;</p>
+          <p class="CentreText"><span class="style20" lang="en">- Albert Einstein -</span></p>
+          <p class="CentreText">&nbsp;</p>
+          <p class="CentreText"><span class="style20" lang="en">&quot;Far better is it to dare mighty things, to win glorious triumphs, even though checkered by failure, than to take rank with those poor spirits who neither enjoy much nor suffer much because they live in the gray twilight that knows not victory nor defeat.&quot;</span></p>
+          <p class="CentreText"><span class="style20" lang="en">- Theodore Roosevelt -</span></p>
+          <p class="CentreText">&nbsp;</p>
+          <p class="CentreText">&nbsp;</p>
+          <p class="style68" lang="en"><span class="style32" lang="en"><a href="mailto:&#115;&#108;&#98;&#101;&#110;&#101;&#102;&#105;&#101;&#108;&#100;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;">E-mail Mr. Benefield</a></span></p>
+          <p class="CentreText"><span class="style111" lang="en"><a href="http://www.lfmsorchestra.org/midi/midi.php"><span class="style78">New Midi Player</span></a>
+            </span>
+          </p>
+          <p class="CentreText"><span class="style111" lang="en"><a href="Videos.html"><span class="style78">Videos - new</span></a>
+            </span>
+          </p>
+          <p class="style91" lang="en"><a href="buyaviolinviola.html"><span class="style78">Buying a Violin or Viola?</span></a></p>
+          <p class="style68" lang="en"><a href="Resources/Pdf/HappyBirthday.pdf"><span class="style78">Happy Birthday</span></a></p>
+          <p class="style68" lang="en"><a href="odetomusic.html"><span class="style78">An Ode to Music</span></a></p>
+          <p class="CentreText"><span class="style32" lang="en"><a href="SWF/NoteTrainer.swf"><span class="style78">Note Trainer</span></a>
+            </span>
+          </p>
+        </td>
+        <td style="height:974px"></td>
+      </tr>
+      <tr class="f-sp">
+        <td><img src="Resources/_clear.gif" width=8 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=728 height=1 alt="" style="float:left"></td>
+        <td style="height:55px"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td>
+      </tr>
+    </table>
+    <table style="border-spacing:0px; width:743px; table-layout:fixed">
+      <colgroup>
+        <col style="width:8px">
+        <col style="width:734px">
+        <col style="width:1px">
+      </colgroup>
+      <tr style="vertical-align:top">
+        <td style="height:25px"></td>
+        <td style="height:25px"><img src="Resources/divider9.gif" width=734 height=25 alt="" style="float:left"></td>
+        <td style="height:25px"></td>
+      </tr>
+      <tr class="f-sp">
+        <td><img src="Resources/_clear.gif" width=8 height=1 alt="" style="float:left"></td>
+        <td><img src="Resources/_clear.gif" width=734 height=1 alt="" style="float:left"></td>
+        <td style="height:1px"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td>
+      </tr>
+    </table>
+    <map id="map1" name="map1">
+      <area alt="" coords="0,12,82,26" href="Testing.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img1',1,'Resources/button1j.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')">
+      <area alt="" coords="0,0,82,45" href="Testing.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img1',1,'Resources/button1j.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')">
+    </map>
+    <map id="map2" name="map2">
+      <area alt="" coords="0,12,82,26" href="ConcertSongs.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img2',1,'Resources/button1a4.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')">
+      <area alt="" coords="0,0,82,45" href="ConcertSongs.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img2',1,'Resources/button1a4.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')">
+    </map>
+    <map id="map3" name="map3">
+      <area alt="" coords="0,12,82,26" href="Technical.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img3',1,'Resources/button1a1j.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')">
+      <area alt="" coords="0,0,82,45" href="Technical.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img3',1,'Resources/button1a1j.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')">
+    </map>
+    <map id="map4" name="map4">
+      <area alt="" coords="0,12,82,26" href="Pictures.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img4',1,'Resources/button1a1a4.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')">
+      <area alt="" coords="0,0,82,45" href="Pictures.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img4',1,'Resources/button1a1a4.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')">
+    </map>
+    <map id="map5" name="map5">
+      <area alt="" coords="0,12,82,26" href="ForSale.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img5',1,'Resources/button1a1a1j.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')">
+      <area alt="" coords="0,0,82,45" href="ForSale.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img5',1,'Resources/button1a1a1j.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')">
+    </map>
+    <map id="map6" name="map6">
+      <area alt="" coords="0,12,82,26" href="Links.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img6',1,'Resources/button1a1a1a4.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')">
+      <area alt="" coords="0,0,82,45" href="Links.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img6',1,'Resources/button1a1a1a4.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')">
+    </map>
+    <map id="map7" name="map7">
+      <area alt="" coords="0,12,82,26" href="Events.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img7',1,'Resources/button1a1a1a1j.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')">
+      <area alt="" coords="0,0,82,45" href="Events.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img7',1,'Resources/button1a1a1a1j.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')">
+    </map>
+  </div>
+</body>
+
+</html>

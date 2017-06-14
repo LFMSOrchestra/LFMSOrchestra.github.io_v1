@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="UTF-8"><title>Videos</title><meta name="viewport" content="width = 750, minimum-scale = 0.25, maximum-scale = 1.60"><meta name="GENERATOR" content="Freeway Express 6.1.2"><style type="text/css"><!--
+body { margin:0px; background-color:#fff; height:100% }
+html { height:100% }
+form { margin:0px }
+body > form { height:100% }
+img { margin:0px; border-style:none }
+button { margin:0px; border-style:none; padding:0px; background-color:transparent; vertical-align:top }
+table { empty-cells:hide }
+td { padding:0px }
+.f-sp { font-size:1px; visibility:hidden }
+.f-lp { margin-bottom:0px }
+.f-fp { margin-top:0px }
+.style104 { font-size:300%; text-align:left }
+.style59 { font-size:120% }
+.style110 { color:#000; font-size:120%; text-align:left }
+#PageDiv { position:relative; min-height:100% }
+--></style>
+<!--[if lt IE 7]><link rel=stylesheet href="css/ie6.css"><style type="text/css">
+#PageDiv { height:100% }
+</style>
+<![endif]--><!--[if lt IE 9]><script src="Resources/html5shiv.js"></script><![endif]--><script src="Resources/FW_Object.js"></script>
+<script type="text/javascript">//<![CDATA[
+var usingIEFix = false;
+//]]></script>
+
+<!--[if lt IE 7]>
+<script type="text/javascript">//<![CDATA[
+usingIEFix = true;
+//]]></script>
+<![endif]-->
+<script type="text/javascript">//<![CDATA[
+
+function FWStripFileFromFilterString(filterString)
+{
+	var start,end;
+	var strSrc = "src='";
+	var strRes = "";
+
+	start = filterString.indexOf(strSrc);
+
+	if(start != -1)
+	{
+		start += strSrc.length;
+		
+		end = filterString.indexOf("',",start);
+		if(end != -1)
+		{
+			strRes = filterString.substring(start,end);
+		}
+	}
+
+	return strRes;
+}
+
+var fwIsNetscape = navigator.appName == 'Netscape';
+
+fwLoad = new Object;
+function FWLoad(image)
+{
+	if (!document.images)
+		return null;
+	if (!fwLoad[image])
+	{
+		fwLoad[image]=new Image;
+		fwLoad[image].src=image;
+	}
+	return fwLoad[image].src;
+}
+
+fwRestore = new Object;
+function FWRestore(msg,chain) 
+{
+	if (document.images) 
+		for (var i in fwRestore)
+		{
+			var r = fwRestore[i];
+			if (r && (!chain || r.chain==chain) && r.msg==msg)
+			{
+				r.src = FWLoad(r.old);
+				fwRestore[i]=null;
+			}
+		}
+}
+
+function FWLSwap(name,msg,newImg,layer,chain,trigger) 
+{
+	var r = fwRestore[name];
+	if (document.images && (!r || r.msg < msg)) 
+	{
+		var uselayers = fwIsNetscape && document.layers && layer != '';
+		var hld;
+		if (uselayers)
+			hld = document.layers[layer].document;
+		else
+			hld = document;
+		var im = hld.getElementById(name);
+		if (!im.old)
+		{
+			if(usingIEFix && im.runtimeStyle.filter)
+				im.old = FWStripFileFromFilterString(im.runtimeStyle.filter);
+			else
+				im.old = im.src;
+		}
+		
+		im.msg = msg;
+		im.chain = chain;
+		im.trigger = trigger;
+		if (newImg) im.src = FWLoad(newImg);
+		fwRestore[name] = im;
+	}
+}
+
+function FWCallHit(func,targNum,msg)
+{
+	if(func)
+		for (var i in func)
+			func[i](targNum,msg);
+}
+function FW_Hit(frameset,chain,targNum,msg)
+{
+	if (frameset && frameset.length) {
+		for (var i=0 ; i <frameset.length ; i++)
+		{
+			try {
+				FW_Hit(frameset[i].frames,chain,targNum,msg);
+			} catch(e) {}
+		}
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+	}
+	else
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+}
+
+fwHit = new Object;
+function FWSlave(frameset,chain,targNum,msg)
+{
+	if (msg==1) fwHit[chain]=targNum;
+	FW_Hit(frameset,chain,targNum,1);
+}
+
+function FWSRestore(frameset,chain)
+{
+	var hit=fwHit[chain];
+	if (hit)
+		FW_Hit(frameset,chain,hit,0);
+	fwHit[chain]=null;
+}
+function FWPreload(){FWLoad("Resources/button5.gif");FWLoad("Resources/button4.gif");FWLoad("Resources/button1k.gif");FWLoad("Resources/button1j.gif");FWLoad("Resources/button1a5.gif");FWLoad("Resources/button1a4.gif");FWLoad("Resources/button1a1k.gif");FWLoad("Resources/button1a1j.gif");FWLoad("Resources/button1a1a5.gif");FWLoad("Resources/button1a1a4.gif");FWLoad("Resources/button1a1a1k.gif");FWLoad("Resources/button1a1a1j.gif");FWLoad("Resources/button1a1a1a5.gif");FWLoad("Resources/button1a1a1a4.gif");FWLoad("Resources/button1a1a1a1k.gif");FWLoad("Resources/button1a1a1a1j.gif");}//]]></script></head><body onload="FWPreload()"><style>
+    body {
+      margin-top: 20px;
+    }
+
+    #header {
+      position: fixed;
+      top: 0;
+      background-color: goldenrod;
+      width: 100%;
+      height: 20px;
+    }
+  </style>
+  <div id="header"><strong>Note:</strong> This is the website archive of Mr. Benefield's old site. Links may be broken. <a href="/index.html">Go Home</a></div><div id="PageDiv"><table style="border-spacing:0px; width:743px; table-layout:fixed"><colgroup><col style="width:8px"><col style="width:82px"><col style="width:11px"><col style="width:82px"><col style="width:11px"><col style="width:82px"><col style="width:11px"><col style="width:82px"><col style="width:12px"><col style="width:82px"><col style="width:11px"><col style="width:82px"><col style="width:11px"><col style="width:82px"><col style="width:11px"><col style="width:82px"><col style="width:1px"></colgroup><tr style="vertical-align:top"><td colspan=16 style="height:8px"></td><td style="height:8px"></td></tr><tr style="vertical-align:top"><td style="height:45px"></td><td style="height:45px"><img src="Resources/button5.gif" width=82 height=45 alt="" usemap="#map1" style="float:left" id="img1"></td><td style="height:45px"></td><td style="height:45px"><img src="Resources/button1k.gif" width=82 height=45 alt="" usemap="#map2" style="float:left" id="img2"></td><td style="height:45px"></td><td style="height:45px"><img src="Resources/button1a5.gif" width=82 height=45 alt="" usemap="#map3" style="float:left" id="img3"></td><td style="height:45px"></td><td style="height:45px"><img src="Resources/button1a1k.gif" width=82 height=45 alt="" usemap="#map4" style="float:left" id="img4"></td><td style="height:45px"></td><td style="height:45px"><img src="Resources/button1a1a5.gif" width=82 height=45 alt="" usemap="#map5" style="float:left" id="img5"></td><td style="height:45px"></td><td style="height:45px"><img src="Resources/button1a1a1k.gif" width=82 height=45 alt="" usemap="#map6" style="float:left" id="img6"></td><td style="height:45px"></td><td style="height:45px"><img src="Resources/button1a1a1a5.gif" width=82 height=45 alt="" usemap="#map7" style="float:left" id="img7"></td><td style="height:45px"></td><td style="height:45px"><img src="Resources/button1a1a1a1k.gif" width=82 height=45 alt="" usemap="#map8" style="float:left" id="img8"></td><td style="height:45px"></td></tr><tr class="f-sp"><td><img src="Resources/_clear.gif" width=8 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=82 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=11 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=82 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=11 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=82 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=11 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=82 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=12 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=82 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=11 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=82 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=11 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=82 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=11 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=82 height=1 alt="" style="float:left"></td><td style="height:3px"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td></tr></table><table style="border-spacing:0px; width:743px; table-layout:fixed"><colgroup><col style="width:8px"><col style="width:734px"><col style="width:1px"></colgroup><tr style="vertical-align:top"><td style="height:45px"></td><td style="height:45px"><img src="Resources/titleblock3.gif" width=734 height=45 alt="" style="float:left"></td><td style="height:45px"></td></tr><tr class="f-sp"><td><img src="Resources/_clear.gif" width=8 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=734 height=1 alt="" style="float:left"></td><td style="height:6px"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td></tr></table><table style="border-spacing:0px; width:743px; table-layout:fixed"><colgroup><col style="width:8px"><col style="width:734px"><col style="width:1px"></colgroup><tr style="vertical-align:top"><td style="height:25px"></td><td style="height:25px"><img src="Resources/line44.gif" width=734 height=25 alt="" style="float:left"></td><td style="height:25px"></td></tr><tr class="f-sp"><td><img src="Resources/_clear.gif" width=8 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=734 height=1 alt="" style="float:left"></td><td style="height:9px"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td></tr></table><table style="border-spacing:0px; width:743px; table-layout:fixed"><colgroup><col style="width:9px"><col style="width:733px"><col style="width:1px"></colgroup><tr style="vertical-align:top"><td style="height:749px"></td><td style="height:749px"><p class="style104 f-fp"><a href="http://www.youtube.com/watch?v=6r0WW-KN6VM&amp;feature=related%20"><span class="style59">Itzhak Perlman on Bow Grip</span></a></p><p class="style110"><a href="http://www.youtube.com/watch?v=h3xEHigWShM&amp;feature=relmfu%20">Itzhak Perlman on Practicing</a></p><p class="style110">&nbsp;</p><p class="style110">&nbsp;</p><p class="style110"><a href="http://www.youtube.com/watch?v=eTPiZup0QmM&amp;feature=fvsr">Itzhak Perlman playing Vivaldi Violin Concerto in A minor, Op.3, No, 6- 1st movement</a></p><p class="style110"><a href="http://www.youtube.com/watch?v=Qo-fN7Qs_nM&amp;feature=bf_prev&amp;list=PL9B828F201145EAED&amp;lf=results_video">Kyung Wha Chung playing Bach Violin Concerto in A Minor - 1st movement</a></p><p class="style110"><a href="http://www.youtube.com/watch?v=DiqaaO1SYT0">Itzhak Perlman playing Mozart Violin Concerto No. 3 - 1st movement</a></p><p class="style110"><a href="http://www.youtube.com/watch?v=ggMPSbSyynY&amp;feature=related">Itzhak Perlman playing Accolay Violin Concerto in A minor - 1st movement</a></p><p class="style110">&nbsp;</p><p class="style110"><a href="http://www.youtube.com/watch?v=nxzsNichmGk&amp;feature=related">Hilary Hahn Playing Twinkle Twinkle</a></p><p class="style110">&nbsp;</p><p class="style110"><a href="http://www.youtube.com/watch?v=aAFqRD7b6Yk&amp;feature=related">Kyung Wha Chung playing  Beethoven Violin concerto 2nd movement</a></p><p class="style110">&nbsp;</p><p class="style110"><a href="http://www.youtube.com/watch?v=UWg1qZ7RmXU&amp;feature=related">Kyung Wha Chung playing Mendelssohn Violin Concerto - 1st movement</a></p><p class="style110"><a href="http://www.youtube.com/watch?v=kRyrc86RsRE&amp;feature=mfu_in_order&amp;list=UL">Kyung Wha Chung playing Mendelssohn Violin Concerto - 2nd movement</a></p><p class="style110"><a href="http://www.youtube.com/watch?v=IKWWtwFtJfQ&amp;feature=mfu_in_order&amp;list=UL">Kyung Wha Chung playing Mendelssohn Violin Concerto - 3rd movement</a></p><p class="style110">&nbsp;</p><p class="style110 f-lp"><a href="http://www.youtube.com/watch?v=YfzTm_Awlh0">Vivladi Concerto for Strings R.V. 121 - 3rd movement starts at 3:24</a></p></td><td style="height:749px"></td></tr><tr class="f-sp"><td><img src="Resources/_clear.gif" width=9 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=733 height=1 alt="" style="float:left"></td><td style="height:16px"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td></tr></table><table style="border-spacing:0px; width:743px; table-layout:fixed"><colgroup><col style="width:8px"><col style="width:734px"><col style="width:1px"></colgroup><tr style="vertical-align:top"><td style="height:25px"></td><td style="height:25px"><img src="Resources/divider9.gif" width=734 height=25 alt="" style="float:left"></td><td style="height:25px"></td></tr><tr class="f-sp"><td><img src="Resources/_clear.gif" width=8 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" width=734 height=1 alt="" style="float:left"></td><td style="height:1px"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td></tr></table><map id="map1" name="map1"><area alt="" coords="0,12,82,26" href="index.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img1',1,'Resources/button4.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,0,82,45" href="index.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img1',1,'Resources/button4.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map><map id="map2" name="map2"><area alt="" coords="0,12,82,26" href="Testing.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img2',1,'Resources/button1j.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,0,82,45" href="Testing.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img2',1,'Resources/button1j.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map><map id="map3" name="map3"><area alt="" coords="0,12,82,26" href="ConcertSongs.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img3',1,'Resources/button1a4.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,0,82,45" href="ConcertSongs.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img3',1,'Resources/button1a4.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map><map id="map4" name="map4"><area alt="" coords="0,12,82,26" href="Technical.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img4',1,'Resources/button1a1j.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,0,82,45" href="Technical.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img4',1,'Resources/button1a1j.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map><map id="map5" name="map5"><area alt="" coords="0,12,82,26" href="Pictures.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img5',1,'Resources/button1a1a4.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,0,82,45" href="Pictures.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img5',1,'Resources/button1a1a4.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map><map id="map6" name="map6"><area alt="" coords="0,12,82,26" href="ForSale.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img6',1,'Resources/button1a1a1j.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,0,82,45" href="ForSale.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img6',1,'Resources/button1a1a1j.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map><map id="map7" name="map7"><area alt="" coords="0,12,82,26" href="Links.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img7',1,'Resources/button1a1a1a4.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,0,82,45" href="Links.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img7',1,'Resources/button1a1a1a4.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map><map id="map8" name="map8"><area alt="" coords="0,12,82,26" href="Events.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img8',1,'Resources/button1a1a1a1j.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><area alt="" coords="0,0,82,45" href="Events.html" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img8',1,'Resources/button1a1a1a1j.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"></map></div></body></html>
