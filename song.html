@@ -121,10 +121,12 @@
       </ul>
     </div>
     <div id="player_div" style="margin: 10px;">
-      <audio id="mp3_player" src="" controls onerror="audioError()">
+      <audio id="mp3_player" src="" controls onerror="audioError()" preload="metadata">
         <p>Unsupported Browser</p>
       </audio>
     </div>
+    <label for="tempo">Tempo: <span id="tempo_label">1</span> <small>(1=Normal, 0.5=Half, 2=Double)</small></label>
+    <input type="range" id="tempo" name="tempo" min="0.5" max="2" step="0.1" value="1" style="width:auto;max-width:200px;" onchange="tempo_label(); set_tempo()">
   </div>
   <!-- Footer -->
   <link rel="stylesheet" href="css/footer.css" />

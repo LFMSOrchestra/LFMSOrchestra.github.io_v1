@@ -155,3 +155,15 @@ function audioError(){
     document.getElementById('player_div').innerHTML = "<div class='alert alert-danger' role='alert'><span class='glyphicon glyphicon-thumbs-down'></span> <strong>Oops!</strong> An error occured. <a onclick='window.location.reload()'><span class='glyphicon glyphicon-refresh'></span> Reload</a></div>"
   }
 }
+
+function set_tempo(){
+  tempo = document.getElementById('tempo').value
+  player = document.getElementById('mp3_player')
+  player.playbackRate = tempo
+}
+
+function tempo_label(){
+  tempo = document.getElementById('tempo').value
+  tempoLabel = document.getElementById('tempo_label')
+  tempoLabel.innerHTML = tempo
+}
