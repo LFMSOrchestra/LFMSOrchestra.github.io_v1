@@ -130,6 +130,9 @@ function openSong(song){
 
   cs_text.innerHTML = song_names[song]
   player.setAttribute('src', songs[song])
+ document.getElementById('tempo').value = 1
+ set_tempo()
+ tempo_label()
 }
 
 function checkApp(){
