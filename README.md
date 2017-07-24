@@ -13,7 +13,7 @@ __Note:__ This tree is a work in progress. Links will take you to the beta/stagi
 * [Testing Songs](https://lfmsorchestra.github.io/testing.html)
 * [Song Player](https://lfmsorchestra.github.io/song.html)
   * Can be added to home screen as an app on iOS/Android.
-  * __Warning:__ Will not work on beta site (due to Git LFS)
+  * __Warning:__ Will not work on beta site (due to Git LFS). Please ask for a demo by emailing [@juniorRubyist](https://github.com/juniorRubyist).
 * [MIDI Player](https://lfmsorchestra.github.io/song.html)
 
 ## Bugs
