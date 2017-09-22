@@ -5,3 +5,7 @@
 a.disabled {
   pointer-events: none;
 }
+
+.jumbotron.container {
+  background-image: url('../img/violin-background.jpg')
+}
